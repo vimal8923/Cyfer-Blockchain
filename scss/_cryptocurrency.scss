@@ -1,0 +1,31 @@
+.crypto-section {
+  color: #fff;
+  border-radius: 0 0 100px 0;
+  overflow: hidden;
+  position: relative;
+
+
+
+  .crypto-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: #f0f0f0;
+  }
+
+  .crypto-laptop {
+    max-width: 100%;
+    z-index: 2;
+    position: relative;
+  }
+
+  .crypto-phone {
+    position: absolute;
+    left: 10%;
+    bottom: -10%;
+    width: 120px;
+    z-index: 3;
+  }
+
+  // Add classes for decorative 3D shapes if needed
+}

@@ -1,0 +1,45 @@
+.services {
+    .section-title {
+        color: #aaa;
+        font-weight: 600;
+
+        span {
+            color: #b85cff;
+        }
+    }
+
+    .service-card {
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        min-height: 220px;
+
+        h5 {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 0.875rem;
+            color: #ccc;
+        }
+
+        &.primary {
+            background: linear-gradient(135deg, #f7f1ff, #ece0ff);
+
+            h5,
+            p {
+                color: #333;
+            }
+        }
+
+        &.dark {
+            background: #1c1b21;
+        }
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.digital-journey {
+  color: #fff;
+
+  .left-panel {
+    background-color: #1b1b2f;
+    padding: 2rem;
+
+    p {
+      margin-top: 1rem;
+      color: #ccc;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .form-panel {
+    padding: 2rem;
+
+    .form-control {
+      background-color: #fff;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+    }
+
+   
+
+    .form-check-label a {
+      color: #a58dff;
+      text-decoration: underline;
+    }
+
+    .form-check-input {
+      accent-color: #b95dfe;
+    }
+    .form-control{
+        clip-path: polygon(16% 12%, 89% 10%, 89% 81%, 86% 100%, 12% 100%, 12% 38%);
+    }
+  }
+
+  // Media queries for responsiveness
+  @media (max-width: 768px) {
+    .left-panel,
+    .form-panel {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .form-panel {
+      .btn-gradient {
+        padding: 0.75rem 1.5rem;
+      }
+
+      form {
+        .row {
+          flex-direction: column;
+
+          .col-md-6 {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .left-panel {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    .form-panel {
+      .form-control {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+      }
+
+      .btn-gradient {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
