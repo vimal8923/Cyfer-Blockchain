@@ -1,45 +1,43 @@
-.crypto-products {
-    .section-title {
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: #ccc;
-        border: 1px solid #ccc;
-        display: inline-block;
-        padding: 0.3rem 1rem;
-        border-radius: 20px;
-        margin-bottom: 0.5rem;
-    }
-
-    .section-subtitle {
-     color: #ccc;
-    }
-
-    .crypto-card {
-        background: linear-gradient(to right, #6F26FF, #FFFFFF);
-        padding: 1rem 10rem;
-        margin-bottom: 1rem;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        clip-path: polygon(29% 10%, 89% 9%, 89% 73%, 75% 100%, 12% 100%, 12% 41%);
+.product-card-logo {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 70px;
+  height: 80px;
 
 
-        .icon-wrapper {
-            background: transparent;
-            margin-bottom: 1rem;
+  @media (max-width: 1400px),
+  (max-width: 992px) {
+    width: 60px;
+    height: 60px;
+  }
 
-            img {
-                width: 60px;
-                height: auto;
-                filter: brightness(0) invert(1); // White coloring
-            }
-        }
+  @media (max-width: 768px) {
+    left: 14%;
+    width: 70px;
+    height: 80px;
+  }
 
-        .crypto-name {
-            font-size: 1.25rem;
-            font-weight: 500;
-            color: white;
-        }
-    }
+  @media (min-width: 360px) and (max-width: 575px) {
+    top: 13%;
+    left: 12%;
+    width: 50px;
+    height: 80px;
+  }
+}
+
+.product-card-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+
+
+  @media (max-width: 768px) {
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
 }

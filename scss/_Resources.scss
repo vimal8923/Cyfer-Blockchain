@@ -1,0 +1,21 @@
+.resources-section {
+    .clip-pattern {
+        background-image: url('../image/resource-card.svg');
+        clip-path: polygon(12% 0, 100% 0, 100% 88%, 87% 100%, 0 100%, 0 13%);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   .left-bg{
+    width: 7%;
+   }
+    .resource-card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    @media (max-width: 576px) {
+        .image-back {
+            display: none !important;
+        }
+    }
+}

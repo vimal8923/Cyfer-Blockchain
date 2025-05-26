@@ -1,62 +1,105 @@
-.hero-section {
-  padding: 5rem 2rem;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-.hero-section h1 {
-  color: #dad5f5;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.hero-section p {
-  color: #cccccc;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.cliper {
-  width: 93%;
-  height: auto;
-  top: 69px;
-  left: 39px;
-  z-index: -1;
-  
-}
-
-.unlock {
-  max-width: 474px;
-  margin: auto;
+.banner .container {
+  background-image: url('../image/Vector.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 60px
 }
 
 
-.pattern {
-  left: -24px;
-  width: 31%;
-  filter: blur(1px);
-}
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2rem;
+@media (max-width: 1700px) {
+  h1 {
+    font-size: 3.8rem;
   }
 
-  .hero-section p {
-    font-size: 1rem;
+  .me-xl-60 {
+    margin-right: 0px !important;
   }
 
-  .cliper {
-    display: none;
+  .mt-lg-280 {
+    margin-top: 250px !important;
+
+  }
+   .ms-xxl-100 {
+    margin-left: 70px !important;
   }
 
-  .unlock,
-  .hero-img {
-    text-align: center;
+}
+
+@media (min-width: 1400px) {
+ 
+
+  .navbar-brand img {
+    width: 306px;
+    transition: transform 0.3s ease;
+  }
+}
+
+@media (max-width: 1400px) {
+  .mt-lg-280 {
+    margin-top: 220px !important;
+
   }
 
-  .hero-img {
-    margin-top: 2rem;
+  .mt-lg-60 {
+    margin-top: 0px;
   }
+
+  .navbar-brand img {
+    width: 200px;
+    transition: transform 0.3s ease;
+  }
+
+  .ms-xxxl-150 {
+    margin-left: 70px;
+  }
+
+}
+
+
+
+
+@media (max-width: 1199px) {
+  .mt-lg-280 {
+    margin-top: 50px !important;
+  }
+
+  .banner .container {
+    background-image: none;
+    padding-left: 0px;
+  }
+  .ms-xxl-100 {
+    margin-left: 0px !important;
+  }
+
+   .banner-main-image{
+    height: 80vh;
+    
+  }
+  header .navbar-brand{
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 992px){
+  .banner-main-image{
+    height: 70vh;
+    
+  }
+}
+
+
+
+
+@media (max-width: 575px) {
+.banner .container {
+    padding-left: 12px;
+  }
+  .mt-lg-280 {
+        margin-top: 20px !important;
+    }
+  .mt-150 {
+    margin-top: 120px !important;
+}
 }

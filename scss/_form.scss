@@ -1,90 +1,72 @@
-.digital-journey {
-  color: #fff;
+.contact-form-section {
+  .form-container {
+    background-image: url('../image/form-Vector.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 55px 5px 65px 96px;
 
-  .left-panel {
-    background-color: #1b1b2f;
-    padding: 2rem;
 
-    p {
-      margin-top: 1rem;
-      color: #ccc;
-    }
+  }
 
-    img {
-      max-width: 100%;
-      height: auto;
+  label {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: $primary;
+  }
+
+  .form-group {
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 1rem;
     }
   }
 
-  .form-panel {
-    padding: 2rem;
+  .form-check-group {
+    margin-bottom: 2rem;
 
-    .form-control {
-      background-color: #fff;
-      border-radius: 0.5rem;
-      padding: 0.75rem;
+    input[type='checkbox'] {
+      margin-top: 3px;
     }
 
-   
-
-    .form-check-label a {
-      color: #a58dff;
-      text-decoration: underline;
+    label {
+      flex: 1;
+      color: $primary;
     }
 
-    .form-check-input {
-      accent-color: #b95dfe;
-    }
-    .form-control{
-        clip-path: polygon(16% 12%, 89% 10%, 89% 81%, 86% 100%, 12% 100%, 12% 38%);
+  }
+
+  .custom-input {
+    padding: 12px 16px;
+    background: white;
+    border: none;
+    width: 100%;
+    color: #000;
+    transition: 0.3s ease;
+    box-shadow: 0 0 0 2px #ccc;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #007bff;
     }
   }
 
-  // Media queries for responsiveness
-  @media (max-width: 768px) {
-    .left-panel,
-    .form-panel {
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    .form-panel {
-      .btn-gradient {
-        padding: 0.75rem 1.5rem;
-      }
-
-      form {
-        .row {
-          flex-direction: column;
-
-          .col-md-6 {
-            width: 100%;
-          }
-        }
-      }
-    }
+  #input-full-name {
+    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 37% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
   }
 
-  @media (max-width: 576px) {
-    .left-panel {
-      h2 {
-        font-size: 1.5rem;
-      }
+  #input-first-name {
+    clip-path: polygon(25px 0%, 100% 0%, 100% 100%, calc(100% - 10px) 100%, 0% 100%, 0% 25px);
+  }
 
-      p {
-        font-size: 0.9rem;
-      }
-    }
+  #input-last-name {
+    clip-path: polygon(0 0%, 100% 0%, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0% 100%, 0% 25px);
+  }
 
-    .form-panel {
-      .form-control {
-        font-size: 0.9rem;
-        padding: 0.6rem;
-      }
-
-      .btn-gradient {
-        font-size: 0.9rem;
-      }
-    }
+  #input-email,
+  #input-message {
+    clip-path: polygon(17px 0%, 100% 0%, 100% calc(95% - 23px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
   }
 }
+

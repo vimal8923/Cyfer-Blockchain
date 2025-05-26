@@ -1,31 +1,24 @@
-.crypto-section {
-  color: #fff;
-  border-radius: 0 0 100px 0;
-  overflow: hidden;
-  position: relative;
+.cryptocurrency .cryptocurrency-cliper{
+   width: 80%;
+   top: 150px;
+   
+};
+.cryptocurrency .star-bg{
+    width: 15%;
+    top: 150px;
+    z-index: -2;
 
+}
+.cryptocurrency .star-left{
+    width: 15%;
+    top: 80px;
+    z-index: -2;
 
-
-  .crypto-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-top: 1rem;
-    color: #f0f0f0;
-  }
-
-  .crypto-laptop {
-    max-width: 100%;
-    z-index: 2;
-    position: relative;
-  }
-
-  .crypto-phone {
-    position: absolute;
-    left: 10%;
-    bottom: -10%;
-    width: 120px;
-    z-index: 3;
-  }
-
-  // Add classes for decorative 3D shapes if needed
+}
+@media (max-width: 768px) {
+ .laptop-image{
+    width: 80%;
+    aspect-ratio: 1/1
+ }
+  
 }

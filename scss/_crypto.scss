@@ -1,36 +1,73 @@
-.crypto-stats {
-    color: #e0d5ff; // Light purple tone
-    font-family: 'Inter', sans-serif;
+.stats-section {
+    .stats-row {
+        div:last-of-type {
+            .stats-card {
+                &::after {
+                    display: block;
 
-    .stat {
-        border-right: 1px solid #654eae; // vertical line
-        padding: 20px 0;
+                    @media (min-width: 768px) and (max-width: 1199.98px) {
+                        display: block;
+                    }
 
-        &:last-child {
-            border-right: none;
+                    @media (min-width: 1200px) {
+                        display: none;
+                    }
+
+                    @media (max-width: 767.98px) {
+                        display: block;
+                    }
+                }
+            }
         }
+    }
+    .stats-card {
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(to left, #B95DFE, #ffffff);
 
-        h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
+            @media (max-width: 1199.98px) {
+                width: 250px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
 
-        p {
-            font-size: 1.1rem;
-            color: #c2a6ff;
-            margin: 0;
+            @media (max-width: 767.98px) {
+                width: 122%;
+                left: 50%;
+                transform: translateX(-50%);
+                
+            }
+
+            @media (min-width: 1200px) {
+                width: 2px;
+                height: 100%;
+                background: linear-gradient(to bottom, #B95DFE, #ffffff);
+                right: -2rem;
+                left: auto;
+                bottom: 0;
+                transform: none;
+            }
         }
     }
 
-    @media (max-width: 767.98px) {
-        .stat {
-            border-right: none;
-            border-bottom: 1px solid #654eae;
+    @media (min-width: 1400px) {
+        .stats-label {
+            font-size: 1.25rem !important;
+        }
 
-            &:last-child {
-                border-bottom: none;
-            }
+        .stats-value {
+            font-size: 3rem !important;
+        }
+    }
+
+    @media (min-width: 1920px) {
+        .stats-label {
+            font-size: 1.8rem !important;
         }
     }
 }
